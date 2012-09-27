@@ -30,11 +30,9 @@
 
       </header>
       <section>
-        <p>Git 사용자를 위한 커뮤니티 가이드. git에 관한 정보가 일목 요연하게 정리된 페이지가 필요해서 정리했다.</p>
+        <p>Git 사용자를 위한 커뮤니티 가이드. git에 관한 정보가 일목 요연하게 정리한 페이지가 필요해서 정리했다. 이 프로젝트 이름은 <code>두깃</code>이다. <code>도그잇</code>으로 읽지 않는다.</p>
 
 <p>한글로 번역된 자료가 있으면 영문 링크는 생략하고 한글 링크만 달았다.</p>
-
-<p>(추가할 내용이 있으면 패치를 보내주세요)</p>
 
 <h2>CLI</h2>
 
@@ -48,11 +46,11 @@
 
 <p><a href="https://github.com/revans/bash-it">bash-it</a>은 bash 환경에서 유용한 프레임워크다. git, git-flow 명령어 자동완성, 프롬프트 테마 등 bash환경에서 필요하는 스크립트들이 모두 들어 있다. 다음은 bash-it의 zork 테마를 적용한 프롬프트 화면이다:</p>
 
-<p>프로젝트를 포크해서 github에 올려놓으면 여러 서버에서 같은 환경으로 작업할 수 있다. 나는 bash-it을 포크해두고 linux, mac 환경에서 동일한 bash 프롬프트와 개발환경을 설정해 사용하고 있다. bash-it은 확장하기 쉬운 구조로 돼있기 때문에 나에게 필요한 bash 환경을 github 저장소에 등록해두고 사용하고 있다.</p>
+<p>프로젝트를 포크해서 github에 올려놓으면 여러 서버에서 같은 환경으로 작업할 수 있다. bash-it을 포크해두고 linux, mac 환경에서 동일한 bash 프롬프트와 개발환경을 설정해 사용할 수 있다. bash-it은 확장하기 쉬운 구조로 돼있기 때문에 나에게 필요한 bash 스크립트를 github 저장소에 등록해두고 사용하기도 좋다.</p>
 
 <h3>oh-my-zsh</h3>
 
-<p><a href="https://github.com/revans/bash-it">bash-it</a>과 마찬가지로 zsh에서 유용한 프레임워크다. <a href="https://github.com/revans/bash-it">bash-it</a>은 이 <a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a>을 보고 따라 만든 것이다. 나는 zsh 사용자가 아니기 때문에 자세한 것은 잘 모르겠다. <a href="https://github.com/revans/bash-it">bash-it</a>과 마찬가지로 git, git-flow 명령어 자동완성, 프롬프트 테마 등 zsh 환경에서 필요한 것이 들어 있을 것이다.</p>
+<p><a href="https://github.com/revans/bash-it">bash-it</a>과 마찬가지로 zsh에서 유용한 프레임워크다. <a href="https://github.com/revans/bash-it">bash-it</a>은 이 <a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a>을 보고 따라 만든 것이다. <a href="https://github.com/revans/bash-it">bash-it</a>과 마찬가지로 git, git-flow 명령어 자동완성, 프롬프트 테마 등 zsh 환경에서 필요한 것이 들어 있을 것이다.</p>
 
 <h3>msysgit</h3>
 
@@ -95,6 +93,8 @@ git config --global alias.cs <span class="s2">"commit -s"</span>
 <p>실행하면 다음과 같이 보여준다:</p>
 
 <p>[alias.tree]()</p>
+
+<p><code>lg</code>와 <code>tree</code>로도 읽을 수 없는 히스토리라면 gitx같은 GUI 도구를 사용해야 한다.</p>
 
 <h3>git mergetool, git difftool</h3>
 
@@ -204,7 +204,21 @@ git config --global alias.cs <span class="s2">"commit -s"</span>
 <li>
 <a href="https://twitter.com/holman">@holman</a>님의 <a href="http://zachholman.com/talk/how-github-uses-github-to-build-github">How GitHub Uses GitHub to Build GitHub</a>
 </li>
-</ul>
+</ul><h2>참여</h2>
+
+<p>추가할 내용이 있으면 Pull Request를 보내주세요.</p>
+
+<div></div>
+
+
+    var disqus_shortname = 'dogfeet-github';
+    var disqus_identifier = '/articles/2012/meteor-meteorite.html';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
       </section>
       <footer>
         <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
