@@ -1,0 +1,36 @@
+.*
+!.gitignore
+*~
+/.hg/*
+*/.hg/*
+.hgignore
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+# SublimeText project files
+/*.sublime-project
+*.sublime-workspace
+*.tmproj
+*.tmproject
+tmtags
+.*.sw[a-z]
+*.un~
+Session.vim
+.netrwhist# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
