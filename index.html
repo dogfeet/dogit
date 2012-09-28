@@ -30,111 +30,15 @@
 
       </header>
       <section>
-        <p>Git 사용자를 위한 커뮤니티 가이드. git에 관한 정보가 일목 요연하게 정리한 페이지가 필요해서 정리했다. 이 프로젝트 이름은 <code>두깃</code>이다. <code>도그잇</code>으로 읽지 않는다.</p>
+        <p>Git 사용자를 위한 커뮤니티 인덱스 페이지.</p>
+
+<p>이 프로젝트 이름은 <code>두깃</code>으로 읽는다.</p>
 
 <p>한글로 번역된 자료가 있으면 영문 링크는 생략하고 한글 링크만 달았다.</p>
 
-<h2>CLI</h2>
+<h2>읽을거리</h2>
 
-<p>CLI 사용시 유용한 자료.</p>
-
-<h3>dotfile</h3>
-
-<p>무려 <a href="https://github.com/">github</a>에서 관리하고 있는 프로젝트로 <a href="http://dotfiles.github.com">dotfiles</a>에 가면 자세한 설명이 나와 있다. git뿐만 아니라 다양한 앱에서 사용하는 dotfile이 정리돼 있다.</p>
-
-<h3>bash-it</h3>
-
-<p><a href="https://github.com/revans/bash-it">bash-it</a>은 bash 환경에서 유용한 프레임워크다. git, git-flow 명령어 자동완성, 프롬프트 테마 등 bash환경에서 필요하는 스크립트들이 모두 들어 있다. 다음은 bash-it의 zork 테마를 적용한 프롬프트 화면이다:</p>
-
-<p>프로젝트를 포크해서 github에 올려놓으면 여러 서버에서 같은 환경으로 작업할 수 있다. bash-it을 포크해두고 linux, mac 환경에서 동일한 bash 프롬프트와 개발환경을 설정해 사용할 수 있다. bash-it은 확장하기 쉬운 구조로 돼있기 때문에 나에게 필요한 bash 스크립트를 github 저장소에 등록해두고 사용하기도 좋다.</p>
-
-<h3>oh-my-zsh</h3>
-
-<p><a href="https://github.com/revans/bash-it">bash-it</a>과 마찬가지로 zsh에서 유용한 프레임워크다. <a href="https://github.com/revans/bash-it">bash-it</a>은 이 <a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a>을 보고 따라 만든 것이다. <a href="https://github.com/revans/bash-it">bash-it</a>과 마찬가지로 git, git-flow 명령어 자동완성, 프롬프트 테마 등 zsh 환경에서 필요한 것이 들어 있을 것이다.</p>
-
-<h3>msysgit</h3>
-
-<p>Window 사용자라면 <a href="http://code.google.com/p/msysgit/">msysgit</a>을 사용하고 있을 텐데 <a href="https://twitter.com/gypark">@gypark</a>님의 <a href="http://gypark.pe.kr/wiki/Git">Git</a>을 반드시 읽어봐야 한다. msysgit 사용자가 고생하는 한글 문제, 멍청한 cmd 터미널 문제등을 고민하고 실험하고 정리하였다. 그리고 그 것을 공유해 주었다. 그외 difftool 설정하고 고르는 방법등 msysgit을 사용하려면 이 글이 꼭 필요하다.</p>
-
-<h3>hg-git</h3>
-
-<p><a href="http://hg-git.github.com/">http://hg-git.github.com/</a> - mercurial to git bridge</p>
-
-<h3>git alias</h3>
-
-<p><code>git alias</code> 명령으로 간단한 단축 명령을 만들 수 있다. 다음과 같이 등록해서 쓰면 편리하다:</p>
-
-<div class="highlight"><pre>git config --global alias.st status
-git config --global alias.co checkout
-git config --global alias.ci commit
-git config --global alias.br branch
-git config --global alias.unstage <span class="s1">'reset HEAD --'</span>
-git config --global alias.cs <span class="s2">"commit -s"</span>
-</pre></div>
-
-<h3>git log</h3>
-
-<p>다음과 같이 등록하면 커밋 로그 하나가 한줄로 나온다:</p>
-
-<div class="highlight"><pre>git config --global alias.lg <span class="s2">"log --name-status --color --abbrev-commit --date=relative --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset'"</span>
-</pre></div>
-
-<p><code>git lg</code>라고 실행하면 다음과 같이 나타난다:</p>
-
-<p>[alias.lg]()</p>
-
-<p>보면 알겠지만 매우 보기 편하다. 커밋하나가 한줄로 나올뿐만 아니라 각 브랜치가 가리키는 커밋도 함께 표시된다.</p>
-
-<p>가끔식은 브랜치 관계를 식별하는 뷰가 필요하다. 그럴때 사용하면 유용한 alias도 하나 등록하자:</p>
-
-<div class="highlight"><pre>git config --global alias.tree <span class="s2">"log --graph --decorate --pretty=oneline --abbrev-commit --all"</span>
-</pre></div>
-
-<p>실행하면 다음과 같이 보여준다:</p>
-
-<p>[alias.tree]()</p>
-
-<p><code>lg</code>와 <code>tree</code>로도 읽을 수 없는 히스토리라면 gitx같은 GUI 도구를 사용해야 한다.</p>
-
-<h3>git mergetool, git difftool</h3>
-
-<ul>
-<li><a href="http://ljh131.tistory.com/143">본격 diff 툴 비교 리뷰 - Beyond Compare의 승!</a></li>
-<li>
-<a href="http://dogfeet.github.com/articles/2011/git-mergediff.html">Git: mergetool, difftool</a> - <code>git mergetool</code>, <code>git difftool</code> 사용법</li>
-</ul><h2>GUI</h2>
-
-<p>유용한 GUI 도구들</p>
-
-<ul>
-<li><a href="http://git-scm.com/downloads/guis">git-scm.com의 GUI clients</a></li>
-<li>
-<a href="http://www.eclipse.org/egit/">egit</a> - for eclipse</li>
-<li>
-<a href="http://mobile.github.com/">github:mobile</a> - for iphone, android</li>
-</ul><h2>기타 프로젝트</h2>
-
-<h3>gitignore</h3>
-
-<p>이 <a href="https://github.com/github/gitignore">gitignore</a> 프로젝트는 <code>.gitignore</code> 파일에 대한 템플릿 프로젝트다. 무려 <a href="https://twitter.com/github">@github</a>에서 관리하고 있고 로컬에 Clone해두면 매우 편리하다. 각 OS, 에디터, 개발도구, 언어에 따라서 다양한 <code>.gitignore</code> 파일 템플릿이 담겨 있다.</p>
-
-<p>자세한 것은 <a href="http://dogfeet.github.com/articles/2012/git-global-ignore.html">gitignore 방법에 대한 글</a>을 살펴보기 바란다.</p>
-
-<h3>git-tle</h3>
-
-<p><a href="https://github.com/dogfeet/git-tles">git-tles</a>는 <a href="https://twitter.com/pismute">@pismute</a>님이 만들어서 사용하고 있는 프로젝트 간단한 스크립트로 해당 저장소에 대해서 <code>git pull</code>과 <code>git fetch</code> 명령을 한방에 수행해주는 <a href="http://dogfeet.github.com/articles/2012/git-ff.html"><code>git ff</code></a> 명령과 브랜치 정보를 요약해서 보여주는 <a href="http://dogfeet.github.com/articles/2012/git-todo.html"><code>git todo</code></a> 명령이 들어 있다.</p>
-
-<p><a href="http://dogfeet.github.com/articles/2012/git-ff.html"><code>git ff</code></a>는 간단히 fetch할 때 Fast-forward될 수 있는 브랜치는 그냥 자동으로 Merge됐으면 해서 만든 툴이다. Merge나 Rebase가 필요하면 수동으로 할 수 있도록 알려준다.</p>
-
-<p><a href="http://dogfeet.github.com/articles/2012/git-todo.html"><code>git todo</code></a>는 브랜치 정보를 요약해주는 툴로 로컬 브랜치 원격브랜치를 나눠서 볼 수 있다.</p>
-
-<h3>git-extras</h3>
-
-<p><a href="https://github.com/visionmedia/git-extras">git-extras</a>는 <a href="https://twitter.com/visionmedia">@visionmedia</a>님의 git 확장 프로젝트다. 구현돼 있는게 굉장히 많고 가끔식 필요한 명령어가 들어 있다. 어떤 것이 있는지 한번은 살펴보길 바란다.</p>
-
-<h2>읽을 거리</h2>
-
-<p>Git과 관련된 읽을 거리를 모았다.</p>
+<p>Git과 관련된 읽을거리를 모았다.</p>
 
 <h3>책, 가이드, conf</h3>
 
@@ -147,10 +51,10 @@ git config --global alias.cs <span class="s2">"commit -s"</span>
 <a href="http://marklodato.github.com/visual-git-guide/index-ko.html">A Visual Git Reference</a> - git의 핵심 용어를 이해하는데 매우 유용함.</li>
 <li>
 <a href="http://cbx33.github.com/gitt/">Git In The Trenches</a> - git을 가르치는 사람을 위해 만들어진 문서.</li>
-<li><a href="http://rogerdudler.github.com/git-guide/index.ko.html">Git - 간편가이드</a></li>
+<li><a href="http://rogerdudler.github.com/git-guide/index.ko.html">Git - 간편 가이드</a></li>
 <li><a href="http://wiki.eclipse.org/EGit/User_Guide">Egit User Guide</a></li>
 <li>
-<a href="http://wiki.eclipse.org/EGit/Training">eclipseConf의 Git 자료</a> - eclipse에서 git을 사용하는데 매우 유익함.</li>
+<a href="http://wiki.eclipse.org/EGit/Training">eclipseConf의 Git 자료</a> - eclipse에서 git을 사용할 때 필독.</li>
 <li>
 <a href="https://twitter.com/chacon">@chacon</a>님의 <a href="http://www.slideshare.net/chacon/getting-git">Getting Git</a>
 </li>
@@ -173,27 +77,27 @@ git config --global alias.cs <span class="s2">"commit -s"</span>
 <li>
 <a href="http://dogfeet.github.com/articles/2012/git-translate-flow.html">Git: 번역 Workflow</a> - progit을 번역할 때 사용한 Workflow.</li>
 <li>
-<a href="http://dogfeet.github.com/articles/2012/git-merge-rebase.html">Git: Rebase는 언제 어떻게 해야 할까?</a> - Rebase는 언제 어떻게 해야하는지 정리</li>
+<a href="http://dogfeet.github.com/articles/2012/git-merge-rebase.html">Git: Rebase는 언제 어떻게 해야 할까?</a> - Rebase는 언제 어떻게 해야 하는지 정리</li>
 <li>
 <a href="http://dogfeet.github.com/articles/2011/git-merge.html">Git: merge</a> - Merge하는 방법을 정리</li>
 </ul><h3>나머지 git 사용법</h3>
 
 <ul>
 <li>
-<a href="http://dogfeet.github.com/articles/2012/git-delta.html">Git: 델타와 스냅샷</a> - 델타와 스냅샷을 관점을 git을 설명함.</li>
-<li>
 <a href="http://dogfeet.github.com/articles/2012/git-svn.html">Git: git-svn</a> - SVN 서버, Git 클라이언트로 사용하는 방법을 정리</li>
 <li>
-<a href="http://dogfeet.github.com/articles/2012/how-to-github.html">GitHub로 남의 프로젝트에 감놓고 배놓기</a> - Github 사용법</li>
+<a href="http://dogfeet.github.com/articles/2012/how-to-github.html">GitHub로 남의 프로젝트에 감 놓고 배 놓기</a> - Github 사용법</li>
 <li>
 <a href="http://dogfeet.github.com/articles/2012/git-conflict.html">Git: conflict</a> - Confict가 났을 때 필요한 명령어를 정리</li>
 <li>
 <a href="http://dogfeet.github.com/articles/2011/git-diff.html">Git: diff</a> - diff 명령어 사용법을 정리</li>
 <li>
-<a href="http://dogfeet.github.com/articles/2011/git-merge.html">Git: refs</a> - git의 Refs를 정리. progit 6장에 나오은 refs를 정리한 것임</li>
+<a href="http://dogfeet.github.com/articles/2011/git-merge.html">Git: refs</a> - git의 Refs를 정리. progit 6장에 나오는 refs를 정리한 것임</li>
 <li>
 <a href="http://dogfeet.github.com/articles/2011/1316924580.html">diff::Unified format</a> - git이 사용하는 diff 포멧인 unified 포멧을 정리함. </li>
-</ul><h3>뒷 이야기</h3>
+<li>
+<a href="http://dogfeet.github.com/articles/2012/git-delta.html">Git: 델타와 스냅샷</a> - 델타와 스냅샷을 관점에서 git을 설명함.</li>
+</ul><h3>뒷이야기</h3>
 
 <ul>
 <li><a href="http://allaboutetp.wordpress.com/2012/03/18/github/">새로운 시장을 창조한 스타트업 GitHub의 비하인드 스토리</a></li>
@@ -204,21 +108,114 @@ git config --global alias.cs <span class="s2">"commit -s"</span>
 <li>
 <a href="https://twitter.com/holman">@holman</a>님의 <a href="http://zachholman.com/talk/how-github-uses-github-to-build-github">How GitHub Uses GitHub to Build GitHub</a>
 </li>
-</ul><h2>참여</h2>
+</ul><h2>SSH</h2>
 
-<p>추가할 내용이 있으면 Pull Request를 보내주세요.</p>
+<h3>Set Up Git</h3>
 
-<div></div>
+<p>githup:help에 있는 <a href="https://help.github.com/articles/set-up-git">Set Up Git</a>. Windows, Mac, Linux 환경에서 사용하는 설정 방법이 잘 설명돼 있다.</p>
 
+<h3>keychain</h3>
 
-    var disqus_shortname = 'dogfeet-github';
-    var disqus_identifier = '/articles/2012/meteor-meteorite.html';
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
+<p>터미널에서 ssh-agent를 사용할 때 유용하다. ssh-agent를 직접 사용하는 것보다 keychain를 사용하는 것이 더 편리하다. 사용방법은 <a href="http://dogfeet.github.com/articles/2011/1320111077.html">keychain for ssh login</a>에서 설명한다.</p>
 
+<p>keychain이 없다면 1.7.10 부터 지원하는 <a href="https://help.github.com/articles/set-up-git#platform-linux">패스워드 캐싱</a> 기능을 사용하는 것도 괜찮다. </p>
+
+<h2>CLI</h2>
+
+<p>CLI 사용 시 유용한 자료.</p>
+
+<h3>dotfiles</h3>
+
+<p>무려 <a href="https://github.com/">github</a>에서 관리하는 프로젝트로 <a href="http://dotfiles.github.com">dotfiles</a>에 가면 자세한 설명이 나와 있다. git뿐만 아니라 다양한 앱에서 사용하는 dotfile이 정리돼 있다.</p>
+
+<h3>bash-it</h3>
+
+<p><a href="https://github.com/revans/bash-it">bash-it</a>은 bash 환경에서 유용한 프레임워크다. git, git-flow 명령어 자동완성, 프롬프트 테마 등 bash 환경에서 필요한 스크립트들이 모두 들어 있다. 다음은 bash-it의 zork 테마를 적용한 프롬프트 화면이다:</p>
+
+<p><img src="https://raw.github.com/dogfeet/dogit/master/img/bash-it-zork.png" alt="bash-it-zork"></p>
+
+<p>프로젝트를 포크해서 github에 올려놓으면 여러 서버에서 같은 환경으로 작업할 수 있다. bash-it을 포크 해두고 linux, mac 환경에서 동일한 bash 프롬프트와 개발환경을 설정해 사용할 수 있다. bash-it은 확장하기 쉬운 구조로 돼 있기 때문에 나에게 필요한 bash 스크립트를 github 저장소에 등록해두고 사용하기도 좋다.</p>
+
+<h3>oh-my-zsh</h3>
+
+<p><a href="https://github.com/revans/bash-it">bash-it</a>과 마찬가지로 zsh에서 유용한 프레임워크다. <a href="https://github.com/revans/bash-it">bash-it</a>은 이 <a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a>을 보고 따라 만든 것이다. <a href="https://github.com/revans/bash-it">bash-it</a>과 마찬가지로 git, git-flow 명령어 자동완성, 프롬프트 테마 등 zsh 환경에서 필요한 것이 들어 있을 것이다.</p>
+
+<h3>msysgit</h3>
+
+<p>Window 사용자라면 <a href="http://code.google.com/p/msysgit/">msysgit</a>을 사용하고 있을 텐데 <a href="https://twitter.com/gypark">@gypark</a>님의 <a href="http://gypark.pe.kr/wiki/Git">Git</a>을 반드시 읽어봐야 한다. msysgit 사용자가 고생하는 한글 문제, 멍청한 cmd 터미널 문제 등을 고민하고 실험하고 정리하였다. 그리고 그것을 공유해 주었다. 그 외 difftool 설정하고 고르는 방법 등 msysgit을 사용하려면 이 글이 꼭 필요하다.</p>
+
+<h3>hg-git</h3>
+
+<p><img src="http://hg-git.github.com/images/server.png" alt="hg-git"></p>
+
+<p><a href="http://hg-git.github.com/">http://hg-git.github.com/</a> - mercurial to git bridge</p>
+
+<h3>git alias</h3>
+
+<p><code>git alias</code> 명령으로 간단한 단축 명령을 만들 수 있다. 다음과 같이 등록해서 쓰면 편리하다:</p>
+
+<div class="highlight"><pre>git config --global alias.st status
+git config --global alias.co checkout
+git config --global alias.ci commit
+git config --global alias.br branch
+git config --global alias.unstage <span class="s1">'reset HEAD --'</span>
+git config --global alias.cs <span class="s2">"commit -s"</span>
+</pre></div>
+
+<h3>git log</h3>
+
+<p>다음과 같이 등록하면 커밋 로그 하나가 한 줄로 나온다:</p>
+
+<div class="highlight"><pre>git config --global alias.lg <span class="s2">"log --name-status --color --abbrev-commit --date=relative --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset'"</span>
+</pre></div>
+
+<p><code>git lg</code>라고 실행하면 다음과 같이 나타난다:</p>
+
+<p><img src="https://raw.github.com/dogfeet/dogit/master/img/git-lg.png" alt="alias.lg"></p>
+
+<p>보면 알겠지만, 매우 보기 편하다. 커밋하나가 한 줄로 나올 뿐만 아니라 각 브랜치가 가리키는 커밋도 함께 표시된다.</p>
+
+<p><code>lg</code>로도 읽을 수 없는 히스토리라면 gitx같은 GUI 도구를 사용하는 것이 좋다.</p>
+
+<h3>git mergetool, git difftool</h3>
+
+<ul>
+<li><a href="http://ljh131.tistory.com/143">본격 diff 툴 비교 리뷰 - Beyond Compare의 승!</a></li>
+<li>
+<a href="http://dogfeet.github.com/articles/2011/git-mergediff.html">Git: mergetool, difftool</a> - <code>git mergetool</code>, <code>git difftool</code> 사용법</li>
+</ul><h2>GUI</h2>
+
+<p>유용한 GUI 도구들</p>
+
+<ul>
+<li><a href="http://git-scm.com/downloads/guis">git-scm.com의 GUI clients</a></li>
+<li>
+<a href="http://www.eclipse.org/egit/">egit</a> - for eclipse</li>
+<li>
+<a href="http://mobile.github.com/">github:mobile</a> - for iphone, android</li>
+</ul><h2>기타 프로젝트</h2>
+
+<h3>gitignore</h3>
+
+<p>이 <a href="https://github.com/github/gitignore">gitignore</a> 프로젝트는 <code>.gitignore</code> 파일에 대한 템플릿 프로젝트다. 무려 <a href="https://twitter.com/github">@github</a>에서 관리하고 로컬에 Clone 해두면 매우 편리하다. 각 OS, 에디터, 개발도구, 언어에 따라서 다양한 <code>.gitignore</code> 파일 템플릿이 담겨 있다.</p>
+
+<p>자세한 것은 <a href="http://dogfeet.github.com/articles/2012/git-global-ignore.html">gitignore 방법에 대한 글</a>을 살펴보기 바란다.</p>
+
+<h3>git-tles</h3>
+
+<p><a href="https://github.com/dogfeet/git-tles">git-tles</a>는 <a href="https://twitter.com/pismute">@pismute</a>님이 만들어서 사용하는 프로젝트 간단한 스크립트로 해당 저장소에 대해서 <code>git fetch</code>를 하고 Fastforward-Merge가 가능한 브랜치가 있으면 Merge하는 <a href="http://dogfeet.github.com/articles/2012/git-ff.html">git ff</a> 명령과 브랜치 정보를 요약해서 보여주는 <a href="http://dogfeet.github.com/articles/2012/git-todo.html">git todo</a> 명령이 들어 있다.</p>
+
+<p><a href="http://dogfeet.github.com/articles/2012/git-ff.html">git ff</a>는 간단히 fetch할 때 Fast-forward될 수 있는 브랜치는 그냥 자동으로 Merge한다. Merge나 Rebase가 필요하면 수동으로 할 수 있도록 알려준다.</p>
+
+<p><a href="http://dogfeet.github.com/articles/2012/git-todo.html">git todo</a>는 브랜치 정보를 요약해주는 도구로 로컬 브랜치와 원격 브랜치를 나눠서 볼 수 있다.</p>
+
+<h3>git-extras</h3>
+
+<p><a href="https://github.com/visionmedia/git-extras">git-extras</a>는 <a href="https://twitter.com/visionmedia">@visionmedia</a>님의 git 확장 프로젝트다. 구현된 게 매우 많고 가끔 이런 게 있으면 좋을 텐데라고 생각날 만한 것이 들어 있다. 어떤 것이 있는지 한번은 살펴보길 바란다.</p>
+
+<h2>참여</h2>
+
+<p>추가하거나 수정할 게 있으면 Pull Request를 보내주거나 저장소에 이슈를 남겨주세요.</p>
       </section>
       <footer>
         <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
