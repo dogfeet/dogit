@@ -166,14 +166,17 @@ git config --global alias.cs <span class="s2">"commit -s"</span>
 
 <p>다음과 같이 등록하면 커밋 로그 하나가 한 줄로 나온다:</p>
 
-<div class="highlight"><pre>git config --global alias.lg <span class="s2">"log --name-status --color --abbrev-commit --date=relative --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset'"</span>
+<div class="highlight"><pre>git config --global alias.lg <span class="s2">"log --name-status \</span>
+<span class="s2">  --color --abbrev-commit --date=relative --graph \</span>
+<span class="s2">  --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset \</span>
+<span class="s2">    %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset'"</span>
 </pre></div>
 
 <p><code>git lg</code>라고 실행하면 다음과 같이 나타난다:</p>
 
 <p><img src="https://raw.github.com/dogfeet/dogit/master/img/git-lg.png" alt="alias.lg"></p>
 
-<p>보면 알겠지만, 매우 보기 편하다. 커밋하나가 한 줄로 나올 뿐만 아니라 각 브랜치가 가리키는 커밋도 함께 표시된다.</p>
+<p>보면 알겠지만, 매우 보기 편하다. 커밋하나가 한 줄로 나올 뿐만 아니라 각 브랜치가 가리키는 커밋도 함께 표시된다. 그리고 그 커밋에서 어떤 파일을 수정했는지도 보여준다.</p>
 
 <p><code>lg</code>로도 읽을 수 없는 히스토리라면 gitx같은 GUI 도구를 사용하는 것이 좋다.</p>
 
