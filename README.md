@@ -14,6 +14,8 @@ Git과 관련된 읽을거리를 모았다.
 * [progit][] - 필독서.
 * [A Visual Git Reference](http://marklodato.github.com/visual-git-guide/index-ko.html) - git의 핵심 용어를 이해하는데 매우 유용함.
 * [Git In The Trenches](http://cbx33.github.com/gitt/) - git을 가르치는 사람을 위해 만들어진 문서.
+* [Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/?utm_source=twitterfeed&utm_medium=twitter)
+* [Advanced Git](http://www.slideshare.net/ajaxiankr/2011-kth-h3-track-b-4-advanced-git-by-aj) - [@andrwj][]님의 h3 2011 발표자료
 * [Git - 간편 가이드](http://rogerdudler.github.com/git-guide/index.ko.html)
 * [Egit User Guide](http://wiki.eclipse.org/EGit/User_Guide)
 * [eclipseConf의 Git 자료](http://wiki.eclipse.org/EGit/Training) - eclipse에서 git을 사용할 때 필독.
@@ -41,6 +43,21 @@ git은 브랜치 사용법이 매우 중요하므로 브랜치 사용법과 관�
 * [Git: refs](http://dogfeet.github.com/articles/2011/git-merge.html) - git의 Refs를 정리. progit 6장에 나오는 refs를 정리한 것임
 * [diff::Unified format](http://dogfeet.github.com/articles/2011/1316924580.html) - git이 사용하는 diff 포멧인 unified 포멧을 정리함. 
 * [Git: 델타와 스냅샷](http://dogfeet.github.com/articles/2012/git-delta.html) - 델타와 스냅샷을 관점에서 git을 설명함.
+
+### @semtlnori님 git 연재.
+
+* [3-way merge 알고리즘에 대해](http://npcode.com/blog/archives/708) - [@semtlnori][]님
+* [git의 revision에 대해](http://npcode.com/blog/archives/655) - [@semtlnori][]님
+* [git에서 특정 파일만 남기기 (git 기반 위키에서 특정 파일만 공개하기)](http://npcode.com/blog/archives/608) - [@semtlnori][]님
+* [Git의 blob은 어떻게 발음하는가.](http://npcode.com/blog/archives/601) - [@semtlnori][]님
+* [디스크 공간 절약을 위해 파일을 Git 저장소에 보관하기](http://npcode.com/blog/archives/591) - [@semtlnori][]님
+* [git bisect 응용 – 줄바꿈 문자 잘못 넣은 사람 찾기](http://npcode.com/blog/archives/582) - [@semtlnori][]님
+* [git으로 특정 기능이 언제 도입되었는지 찾기](http://npcode.com/blog/archives/463) - [@semtlnori][]님
+* [깔끔하게 커밋하기](http://npcode.com/blog/archives/449) - [@semtlnori][]님
+* [git pull 할 때 인자 안줘도 알아서 되게 하기](http://npcode.com/blog/archives/391) - [@semtlnori][]님
+* [Git의 Staging Area는 어떤 점이 유용한가](http://npcode.com/blog/archives/736) - [@semtlnori][]님
+
+[@semtlnori]: https://twitter.com/semtlnori
 
 ### 뒷이야기
 
@@ -174,3 +191,4 @@ git config --global alias.lg "log --name-status \
 [@nvie]: https://twitter.com/nvie
 [@holman]: https://twitter.com/holman
 [@chacon]: https://twitter.com/chacon
+
