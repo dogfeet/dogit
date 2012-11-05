@@ -65,6 +65,7 @@ git은 브랜치 사용법이 매우 중요하므로 브랜치 사용법과 관�
 * [Git에 대한 Linus Torvalds의 연설](http://www.youtube.com/watch?v=4XpnKHJAok8)
 * [@holman][]님의 [How GitHub Works](http://zachholman.com/posts/how-github-works/)
 * [@holman][]님의 [How GitHub Uses GitHub to Build GitHub](http://zachholman.com/talk/how-github-uses-github-to-build-github)
+* [@holman][]님의 [Git and GitHub Secrets](http://zachholman.com/talk/git-github-secrets)
 
 ## SSH
 
