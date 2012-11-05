@@ -192,4 +192,5 @@ git config --global alias.lg "log --name-status \
 [@nvie]: https://twitter.com/nvie
 [@holman]: https://twitter.com/holman
 [@chacon]: https://twitter.com/chacon
+[@andrwj]: https://twitter.com/andrwj
 
