@@ -15,12 +15,19 @@ Git과 관련된 읽을거리를 모았다.
 * [A Visual Git Reference](http://marklodato.github.com/visual-git-guide/index-ko.html) - git의 핵심 용어를 이해하는데 매우 유용함.
 * [Git In The Trenches](http://cbx33.github.com/gitt/) - git을 가르치는 사람을 위해 만들어진 문서.
 * [Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/?utm_source=twitterfeed&utm_medium=twitter)
-* [Advanced Git](http://www.slideshare.net/ajaxiankr/2011-kth-h3-track-b-4-advanced-git-by-aj) - [@andrwj][]님의 h3 2011 발표자료
 * [Git - 간편 가이드](http://rogerdudler.github.com/git-guide/index.ko.html)
 * [Egit User Guide](http://wiki.eclipse.org/EGit/User_Guide)
 * [eclipseConf의 Git 자료](http://wiki.eclipse.org/EGit/Training) - eclipse에서 git을 사용할 때 필독.
+* [Git For Designers](http://blog.teamtreehouse.com/git-for-designers-part-1)
+
+### 슬라이드 & 동영상 자료
+
 * [@chacon][]님의 [Getting Git](http://www.slideshare.net/chacon/getting-git)
 * [@chacon][]님의 [Git 101](http://www.slideshare.net/chacon/git-101-presentation)
+* [Advanced Git](http://www.slideshare.net/ajaxiankr/2011-kth-h3-track-b-4-advanced-git-by-aj) - [@andrwj][]님의 h3 2011 발표자료
+* [WordCamp San Francisco 2011: Version Control for Designers](http://www.slideshare.net/chexee/wordcamp-san-francisco-2011-version-control-for-designers) 워드프레스 컨퍼런스에서 [Chelsea Otakan](http://twitter.com/chexee)이 발표한 자료인데 브랜치 관리를 나무에 비유한 것이 인상적입니다.
+ * 마지막에 소개된 앱 중에 [KaleidoScope](http://www.kaleidoscopeapp.com) 인상적입니다.
+* [Just Do Git](http://keedi.pe.kr/presentations/just_do_git/) by [Keedi Kim](http://keedi.pe.kr). SCM으로서 Git을 쓸 때의 여러가지 내용을 재미있게 담고 있으며 Git-flow에 대해서 소개하는 자료입니다.
 
 ### 브랜치 사용법(Workflow)
 
