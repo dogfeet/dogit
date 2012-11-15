@@ -8,7 +8,7 @@ Git 사용자를 위한 커뮤니티 인덱스 페이지.
 
 Git과 관련된 읽을거리를 모았다.
 
-### 책, 가이드, conf
+### 책, 가이드
 
 * [git-scm](http://git-scm.com/) - git 홈페이지
 * [progit][] - 필독서.
@@ -17,17 +17,20 @@ Git과 관련된 읽을거리를 모았다.
 * [Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/?utm_source=twitterfeed&utm_medium=twitter)
 * [Git - 간편 가이드](http://rogerdudler.github.com/git-guide/index.ko.html)
 * [Egit User Guide](http://wiki.eclipse.org/EGit/User_Guide)
+* [Git For Designers](http://hoth.entp.com/output/git_for_designers.html) - designer를 위해서 나름 쉽게 정리됨.
+* [Just Do Git](http://keedi.pe.kr/presentations/just_do_git/) by [Keedi Kim](http://keedi.pe.kr). SCM으로서 Git을 쓸 때의 여러가지 내용을 재미있게 담고 있으며 Git-flow에 대해서 소개하는 자료입니다.
+
+### conf
+
 * [eclipseConf의 Git 자료](http://wiki.eclipse.org/EGit/Training) - eclipse에서 git을 사용할 때 필독.
-* [Git For Designers](http://blog.teamtreehouse.com/git-for-designers-part-1)
-
-### 슬라이드 & 동영상 자료
-
 * [@chacon][]님의 [Getting Git](http://www.slideshare.net/chacon/getting-git)
 * [@chacon][]님의 [Git 101](http://www.slideshare.net/chacon/git-101-presentation)
 * [Advanced Git](http://www.slideshare.net/ajaxiankr/2011-kth-h3-track-b-4-advanced-git-by-aj) - [@andrwj][]님의 h3 2011 발표자료
 * [WordCamp San Francisco 2011: Version Control for Designers](http://www.slideshare.net/chexee/wordcamp-san-francisco-2011-version-control-for-designers) 워드프레스 컨퍼런스에서 [Chelsea Otakan](http://twitter.com/chexee)이 발표한 자료인데 브랜치 관리를 나무에 비유한 것이 인상적입니다.
  * 마지막에 소개된 앱 중에 [KaleidoScope](http://www.kaleidoscopeapp.com) 인상적입니다.
-* [Just Do Git](http://keedi.pe.kr/presentations/just_do_git/) by [Keedi Kim](http://keedi.pe.kr). SCM으로서 Git을 쓸 때의 여러가지 내용을 재미있게 담고 있으며 Git-flow에 대해서 소개하는 자료입니다.
+* [@holman][]님의 [How GitHub Works](http://zachholman.com/posts/how-github-works/)
+* [@holman][]님의 [How GitHub Uses GitHub to Build GitHub](http://zachholman.com/talk/how-github-uses-github-to-build-github)
+* [@holman][]님의 [Git and GitHub Secrets](http://zachholman.com/talk/git-github-secrets)
 
 ### 브랜치 사용법(Workflow)
 
@@ -64,15 +67,10 @@ git은 브랜치 사용법이 매우 중요하므로 브랜치 사용법과 관�
 * [git pull 할 때 인자 안줘도 알아서 되게 하기](http://npcode.com/blog/archives/391) - [@semtlnori][]님
 * [Git의 Staging Area는 어떤 점이 유용한가](http://npcode.com/blog/archives/736) - [@semtlnori][]님
 
-[@semtlnori]: https://twitter.com/semtlnori
-
 ### 뒷이야기
 
 * [새로운 시장을 창조한 스타트업 GitHub의 비하인드 스토리](http://allaboutetp.wordpress.com/2012/03/18/github/)
 * [Git에 대한 Linus Torvalds의 연설](http://www.youtube.com/watch?v=4XpnKHJAok8)
-* [@holman][]님의 [How GitHub Works](http://zachholman.com/posts/how-github-works/)
-* [@holman][]님의 [How GitHub Uses GitHub to Build GitHub](http://zachholman.com/talk/how-github-uses-github-to-build-github)
-* [@holman][]님의 [Git and GitHub Secrets](http://zachholman.com/talk/git-github-secrets)
 
 ## SSH
 
@@ -200,4 +198,6 @@ git config --global alias.lg "log --name-status \
 [@holman]: https://twitter.com/holman
 [@chacon]: https://twitter.com/chacon
 [@andrwj]: https://twitter.com/andrwj
+[@semtlnori]: https://twitter.com/semtlnori
+
 
