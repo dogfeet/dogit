@@ -114,24 +114,43 @@ Window 사용자라면 [msysgit][]을 사용하고 있을 텐데 [@gypark][]님�
 
 http://hg-git.github.com/ - mercurial to git bridge
 
+### git config
+
+기타설정.
+
+```sh
+git config --global user.email "me@here.com"
+git config --global user.name "Billy Everyteen"
+git config --global color.ui 1
+```
+
 ### git alias
 
 `git alias` 명령으로 간단한 단축 명령을 만들 수 있다. 다음과 같이 등록해서 쓰면 편리하다:
 
-```bash
+```sh
 git config --global alias.st status
 git config --global alias.co checkout
 git config --global alias.ci commit
 git config --global alias.br branch
 git config --global alias.unstage 'reset HEAD --'
 git config --global alias.cs "commit -s"
+git config --global alias.amend "commit --amend -C HEAD"
+git config --global alias.undo "reset --soft HEAD^"
+git config --global alias.count "shortlog -sn"
+git config --global alias.credit '!f() { git commit --amend --author "$0 <$1>" -C HEAD; }; f'
 ```
+
+* `git credit "Changwoo Park" pismute@gmail.com` - 최근 커밋의 author 수정
+* `git count` - 커미터 통계
+* `git undo` - 이전 커밋으로 돌리고 staged 상태로 만든다.
+* `git amend` - 최근 커밋을 수정. 커밋 메시지는 수정할 수 없다. 커밋 메시지를 수정하려면 `git undo;git commit`이나 `git commit --amend`
 
 ### git log
 
 다음과 같이 등록하면 커밋 로그 하나가 한 줄로 나온다:
 
-```bash
+```sh
 git config --global alias.lg "log --name-status \
   --color --abbrev-commit --date=relative --graph \
   --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset \
