@@ -19,6 +19,7 @@ Git과 관련된 읽을거리를 모았다.
 * [Egit User Guide](http://wiki.eclipse.org/EGit/User_Guide)
 * [Git For Designers](http://hoth.entp.com/output/git_for_designers.html) - designer를 위해서 나름 쉽게 정리됨.
 * [Just Do Git](http://keedi.pe.kr/presentations/just_do_git/) by [Keedi Kim](http://keedi.pe.kr). SCM으로서 Git을 쓸 때의 여러가지 내용을 재미있게 담고 있으며 Git-flow에 대해서 소개하는 자료입니다.
+* [teach.github.com](http://teach.github.com/) - GitHub에서 배포하는 교육자료로 굉장히 훌륭하다.
 
 ### conf
 
@@ -103,6 +104,10 @@ CLI 사용 시 유용한 자료.
 ### oh-my-zsh
 
 [bash-it][]과 마찬가지로 zsh에서 유용한 프레임워크다. [bash-it][]은 이 [oh-my-zsh][]을 보고 따라 만든 것이다. [bash-it][]과 마찬가지로 git, git-flow 명령어 자동완성, 프롬프트 테마 등 zsh 환경에서 필요한 것이 들어 있을 것이다.
+
+### prezto
+
+zsh 프레임워크로 [oh-my-zsh][]보다 관리가 잘되고 있는 것 같다. 나는 [bash-it][]을 사용하다가 [oh-my-zsh][]로 변경했다가 [prezto][]를 발견해서 [prezto][]로 바꿨다.
 
 ### msysgit
 
@@ -208,6 +213,7 @@ git config --global alias.lg "log --name-status \
 [bash-it]: https://github.com/revans/bash-it
 [oh-my-zsh]: https://github.com/robbyrussell/oh-my-zsh
 [msysgit]: http://code.google.com/p/msysgit/
+[prezto]: https://github.com/sorin-ionescu/prezto
 
 [@gypark]: https://twitter.com/gypark
 [@github]: https://twitter.com/github
