@@ -20,6 +20,8 @@ Git과 관련된 읽을거리를 모았다.
 * [Git For Designers](http://hoth.entp.com/output/git_for_designers.html) - designer를 위해서 나름 쉽게 정리됨.
 * [Just Do Git](http://keedi.pe.kr/presentations/just_do_git/) by [Keedi Kim](http://keedi.pe.kr). SCM으로서 Git을 쓸 때의 여러가지 내용을 재미있게 담고 있으며 Git-flow에 대해서 소개하는 자료입니다.
 * [teach.github.com](http://teach.github.com/) - GitHub에서 배포하는 교육자료로 굉장히 훌륭하다.
+* [http://atlassian.com/git/](http://atlassian.com/git/) - atlassian의 Git Tutorials & Training
+* [Git 브랜치 배우기](http://pcottle.github.com/learnGitBranching/?NODEMO&locale=ko&command=levels) - Git 브랜치 배우기. 매우 훌륭. [@urigit][]에서 번역함.
 
 ### conf
 
@@ -224,5 +226,6 @@ git config --global alias.lg "log --name-status \
 [@chacon]: https://twitter.com/chacon
 [@andrwj]: https://twitter.com/andrwj
 [@semtlnori]: https://twitter.com/semtlnori
+[@urigit]: https://github.com/urigit
 
 
