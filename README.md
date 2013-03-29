@@ -34,6 +34,7 @@ Git과 관련된 읽을거리를 모았다.
 * [@holman][]님의 [How GitHub Works](http://zachholman.com/posts/how-github-works/)
 * [@holman][]님의 [How GitHub Uses GitHub to Build GitHub](http://zachholman.com/talk/how-github-uses-github-to-build-github)
 * [@holman][]님의 [Git and GitHub Secrets](http://zachholman.com/talk/git-github-secrets)
+* [svn 능력자를 위한 git 개념 가이드](http://www.slideshare.net/einsub/svn-git-17386752)
 
 ### 브랜치 사용법(Workflow)
 
