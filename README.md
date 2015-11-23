@@ -11,7 +11,7 @@ Git과 관련된 읽을거리를 모았다.
 ### 책, 가이드
 
 * [git-scm](http://git-scm.com/) - git 홈페이지
-* [progit][] - 필독서.
+* [progit][https://github.com/progit/progit2-ko] - 필독서.
 * [A Visual Git Reference](http://marklodato.github.com/visual-git-guide/index-ko.html) - git의 핵심 용어를 이해하는데 매우 유용함.
 * [Git In The Trenches](http://cbx33.github.com/gitt/) - git을 가르치는 사람을 위해 만들어진 문서.
 * [Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/?utm_source=twitterfeed&utm_medium=twitter)
